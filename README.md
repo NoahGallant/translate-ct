@@ -4,7 +4,7 @@ Translate is an open source programming environment to designed to teach **compu
 
 ### Concept
   - The concept behind **Translate** is to use real-world examples in order to change discrete processes and algorithms to computational thinking in a programming setting.
- 
+
 ### How Translate came to be...
 
  - The idea for Translate came from the idea to teach algorithms and computational thinking before/concurrently as adolescents begin to learn to program.
@@ -38,7 +38,7 @@ present(guacamole)
 This is the general syntax used. Behind-the-scenes the program generates a JSON Object corresponding to the code written. Once this file is saved in Translate with the Description and the Name filled out, it can be opened from Translate.
 
 The instructor may then take the student through the declarations, showing them 2 avocados and writing the line:
-``` 
+```
 avos = 2 avocados
 ```
 
@@ -69,6 +69,7 @@ As this project was approached we looked at modern day programming languages and
 mashedAvocados = mash avos with spoon
 ```
 - Here is an example of dynamic variable declaration, and an inlined-function. As you can see the function takes the form ```function_name parameter_name with tool_or_option```. The idea here is to implicitly teach function return-values, and to begin to even introduce the idea of library functions, where given the activity there are certain operations that exist.
+
 ##### Options / Keywords
  - Within computational thinking there are certainly set constants and ideas that act as translators for algorithmic processes.
 ```
@@ -109,6 +110,8 @@ Translate works on the following platforms
 ### Todos
 
  - Add loops
+ - Improve IDE
+ - Add syntax highlighting
  - Clean code
 
 License
@@ -132,4 +135,3 @@ MIT
    [PlGh]:  <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
    [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
    [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-
