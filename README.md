@@ -19,7 +19,7 @@ Translate is an open source programming environment to designed to teach **compu
  - The instructor then asks the kids to perform several tasks such as changing the variable names, the size of the product, and the order of declarations.
  - Here is a full example:
 
-Written by constructor:
+Written by instructor:
 ```
 avos = 2 avocado
 toms = 2 tomato
