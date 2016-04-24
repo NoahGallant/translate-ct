@@ -80,6 +80,13 @@ present(guacamole)
 - We again see here the idea of the `with` keyword, but also the option to use `,` to list out multiple variables in our function. The `spoon` is never declared in our code and thus acts as an option-parameter. This is easily translated into ideas of passing parameters into functions in higher level programming to dictate how the function operates.
 - Finally, ```present``` establishes a precedent of using functions like ```return``` or ```exit``` in various languages to end our programs, or returning values.
 
+### Media
+
+![Function Box](https://raw.githubusercontent.com/translate-ct/case-study-media/function-box.JPG)
+![Function Box](https://raw.githubusercontent.com/translate-ct/case-study-media/function-box.JPG)
+![Function Box](https://raw.githubusercontent.com/translate-ct/case-study-media/function-box.JPG)
+![Function Box](https://raw.githubusercontent.com/translate-ct/case-study-media/function-box.JPG)
+
 ### Version
 0.1.0
 
