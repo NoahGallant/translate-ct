@@ -82,10 +82,11 @@ present(guacamole)
 
 ### Media
 
-![Function Box](https://raw.githubusercontent.com/translate-ct/case-study-media/function-box.JPG)
-![Function Box](https://raw.githubusercontent.com/translate-ct/case-study-media/function-box.JPG)
-![Function Box](https://raw.githubusercontent.com/translate-ct/case-study-media/function-box.JPG)
-![Function Box](https://raw.githubusercontent.com/translate-ct/case-study-media/function-box.JPG)
+![Function Box](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/function-box.JPG)
+![Learning](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/learning.JPG)
+![Materials](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/materials.JPG)
+![Programming](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/programming.JPG)
+![Tomato](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/tomato.JPG)
 
 ### Version
 0.1.0
