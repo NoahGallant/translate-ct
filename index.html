@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Translate-CT by NoahGallant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Translate-CT</h1>
+      <h2 class="project-tagline">Open-source program for teaching Computational Thinking</h2>
+      <a href="https://github.com/NoahGallant/translate-ct" class="btn">View on GitHub</a>
+      <a href="https://github.com/NoahGallant/translate-ct/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/NoahGallant/translate-ct/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="translate" class="anchor" href="#translate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translate</h1>
+
+<p>Translate is an open source programming environment to designed to teach <strong>computational thinking</strong>. It is written in Javascript and built on <a href="http://electron.atom.io">Electron</a> to be cross-platform and hackable.</p>
+
+<h3>
+<a id="concept" class="anchor" href="#concept" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Concept</h3>
+
+<ul>
+<li>The concept behind <strong>Translate</strong> is to use real-world examples in order to change discrete processes and algorithms to computational thinking in a programming setting.</li>
+</ul>
+
+<h3>
+<a id="how-translate-came-to-be" class="anchor" href="#how-translate-came-to-be" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How Translate came to be...</h3>
+
+<ul>
+<li>The idea for Translate came from the idea to teach algorithms and computational thinking before/concurrently as adolescents begin to learn to program.</li>
+<li>The Translate project was a result of a human-centered design experiment conducted at <a href="http://columbia.edu">Columbia</a> by the <a href="http://bcdfa.com">Design for America</a> team there.</li>
+<li>The team wanted to find a simple way to computational thinking through ideas that kids [Grade 4-8] might already understand. Here is a research article on the difficulty, but importance of such a task: <a href="https://www.researchgate.net/profile/Valerie_Barr/publication/247924673_Bringing_computational_thinking_to_K-12_what_is_Involved_and_what_is_the_role_of_the_computer_science_education_community/links/53e2e8b40cf2b9d0d832c294.pdf">ResearchGate</a>.</li>
+<li>The idea then came that ideas in cooking, like recipes and processes, could easily by <em>translated</em> in pseudo-code... and so arised <strong>Translate</strong>.</li>
+<li>Translate acts as a medium for encoding physical processes.</li>
+</ul>
+
+<h3>
+<a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How it works</h3>
+
+<ul>
+<li>The most success in using this program has been found in having an instructor on-site with the kids, taking them through the process physically and writing the code with them.</li>
+<li>The instructor then asks the kids to perform several tasks such as changing the variable names, the size of the product, and the order of declarations.</li>
+<li>Here is a full example:</li>
+</ul>
+
+<p>Written by instructor:</p>
+
+<pre><code>avos = 2 avocado
+toms = 2 tomato
+lis = 2 lime
+oni = 1 onion
+
+mashedAvocados = mash avos with spoon
+dicedTomatoes = chop toms with knife
+choppedOnions = chop oni with knife
+squeezedLimes = squeeze lis with hand
+guacamole = mix mashedAvocados, dicedTomatoes, choppedOnions, squeezedLimes with spoon
+
+present(guacamole)
+</code></pre>
+
+<p>This is the general syntax used. Behind-the-scenes the program generates a JSON Object corresponding to the code written. Once this file is saved in Translate with the Description and the Name filled out, it can be opened from Translate.</p>
+
+<p>The instructor may then take the student through the declarations, showing them 2 avocados and writing the line:</p>
+
+<pre><code>avos = 2 avocados
+</code></pre>
+
+<p>One way to communicate functions is to produce a physical box once each material is declared. The box acts as a "function box." Given the material, and the function performed, the student can select from a knife, a hand, or a spoon to put on top of the box, and then pass through the material. Say they choose to mash the avocados with a spoon, they place the spoon on the function box, pass the avocado through, and recieve mashed avocados. In turn, the following code is produced:</p>
+
+<pre><code>mashedAvocados = mash avos with spoon
+</code></pre>
+
+<p>Once the final product is produced, you present it:</p>
+
+<pre><code>present(guacamole)
+</code></pre>
+
+<h3>
+<a id="computational-thinking" class="anchor" href="#computational-thinking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computational Thinking</h3>
+
+<p>As this project was approached we looked at modern day programming languages and computing to see which aspects of computer science we wanted to include in the functionality and learning process of Translate. Most college/high school students are using languages like Java, C++ and Swift for programming, and Python and similar languages for scripting. As there are such a variety of syntax and functionality differences in these languages, we tried to discern what the base model for writing an algorithm in any of these languages would be.</p>
+
+<h5>
+<a id="variables--references" class="anchor" href="#variables--references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variables / References</h5>
+
+<ul>
+<li>For variables and references we initially wanted to take an object reference approach, where we tried to discretely communicate the idea of using object references. It became easy to see that this was not only complicated and convoluted, but not essential to teaching computational thinking as a whole.</li>
+<li>We ultimately wanted to communicate naming how variables are given names, how those variables are then refered to, and how those variables can be declared in different, dynamic ways.
+<code>
+avos = 2 avocado
+</code>
+</li>
+<li>The <code>avos</code> variable then becomes the reference name, with <code>avocado</code> being the type and <code>2</code> as an initialization parameter.</li>
+</ul>
+
+<h5>
+<a id="functions" class="anchor" href="#functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Functions</h5>
+
+<ul>
+<li>The functions in the Translate "language" initially had syntax of <code>mash(avos)</code>. It became apparent in prototyping that the parenthesis and the syntax is not as intuitive, so we altered the language to make the programming more intuitive.</li>
+</ul>
+
+<pre><code>mashedAvocados = mash avos with spoon
+</code></pre>
+
+<ul>
+<li>Here is an example of dynamic variable declaration, and an inlined-function. As you can see the function takes the form <code>function_name parameter_name with tool_or_option</code>. The idea here is to implicitly teach function return-values, and to begin to even introduce the idea of library functions, where given the activity there are certain operations that exist.</li>
+</ul>
+
+<h5>
+<a id="options--keywords" class="anchor" href="#options--keywords" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options / Keywords</h5>
+
+<ul>
+<li>Within computational thinking there are certainly set constants and ideas that act as translators for algorithmic processes.</li>
+</ul>
+
+<pre><code>guacamole = mix mashedAvocados, dicedTomatoes, choppedOnions, squeezedLimes with spoon
+
+present(guacamole)
+</code></pre>
+
+<ul>
+<li>We again see here the idea of the <code>with</code> keyword, but also the option to use <code>,</code> to list out multiple variables in our function. The <code>spoon</code> is never declared in our code and thus acts as an option-parameter. This is easily translated into ideas of passing parameters into functions in higher level programming to dictate how the function operates.</li>
+<li>Finally, <code>present</code> establishes a precedent of using functions like <code>return</code> or <code>exit</code> in various languages to end our programs, or returning values.</li>
+</ul>
+
+<h3>
+<a id="media" class="anchor" href="#media" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Media</h3>
+
+<p><img src="https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/function-box.JPG?raw=true" alt="Function Box">
+<img src="https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/learning.JPG?raw=true" alt="Learning">
+<img src="https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/materials.JPG?raw=true" alt="Materials">
+<img src="https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/programming.JPG?raw=true" alt="Programming">
+<img src="https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/tomato.JPG?raw=true" alt="Tomato"></p>
+
+<h3>
+<a id="version" class="anchor" href="#version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version</h3>
+
+<p>0.1.0</p>
+
+<h3>
+<a id="tech" class="anchor" href="#tech" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tech</h3>
+
+<p>Translate uses a number of open source projects to work properly:</p>
+
+<ul>
+<li>
+<a href="https://photonkit.com">PhotonKit</a> - great front-end framework for Electron</li>
+<li>
+<a href="http://nodejs.org">node.js</a> - evented I/O for the backend</li>
+<li>
+<a href="http://electron.atom.io">Electron</a> - fast node.js network app framework</li>
+<li>
+<a href="https://github.com/jakiestfu/Behave.js">Behave.js</a> - key-binding for IDE</li>
+<li>
+<a href="http://jquery.com">jQuery</a> - Front-end Electron components</li>
+</ul>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>To run go to <code>translate/dist/Translate.app</code></p>
+
+<h3>
+<a id="systems" class="anchor" href="#systems" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Systems</h3>
+
+<p>Translate works on the following platforms</p>
+
+<ul>
+<li>Web [Designed for Chromium]</li>
+<li>OS X</li>
+<li>Windows</li>
+<li>Linux</li>
+</ul>
+
+<h3>
+<a id="todos" class="anchor" href="#todos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Todos</h3>
+
+<ul>
+<li>Add loops</li>
+<li>Improve IDE</li>
+<li>Add syntax highlighting</li>
+<li>Clean code</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/NoahGallant/translate-ct">Translate-CT</a> is maintained by <a href="https://github.com/NoahGallant">NoahGallant</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
