@@ -13,6 +13,11 @@ Translate is an open source programming environment to designed to teach **compu
  - The idea then came that ideas in cooking, like recipes and processes, could easily by *translated* in pseudo-code... and so arised **Translate**.
  - Translate acts as a medium for encoding physical processes.
 
+### Screenshots
+
+![Screenshot #1](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/screen-shot-1.JPG)
+![Screenshot #2](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/screen-shot-2.JPG)
+
 ### How it works
 
  - The most success in using this program has been found in having an instructor on-site with the kids, taking them through the process physically and writing the code with them.
