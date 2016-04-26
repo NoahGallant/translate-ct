@@ -15,8 +15,8 @@ Translate is an open source programming environment to designed to teach **compu
 
 ### Screenshots
 
-![Screenshot #1](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/screen-shot-1.JPG)
-![Screenshot #2](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/screen-shot-2.JPG)
+![Screenshot #1](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/screen-shot-1.png)
+![Screenshot #2](https://github.com/NoahGallant/translate-ct/blob/master/case-study-media/screen-shot-2.png)
 
 ### How it works
 
